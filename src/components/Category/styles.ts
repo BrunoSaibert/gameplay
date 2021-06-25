@@ -16,8 +16,8 @@ export const styles = StyleSheet.create({
     height: 116,
     borderRadius: 8,
     alignItems: "center",
-    justifyContent: "space-between",
-    paddingVertical: 20,
+    justifyContent: "space-around",
+    paddingVertical: 12,
   },
   check: {
     position: "absolute",
