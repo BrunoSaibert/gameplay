@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title700,
     fontSize: 18,
     color: theme.colors.heading,
-    marginBottom: 18,
+    marginBottom: 12,
   },
   form: {
     flex: 1,
@@ -31,10 +31,11 @@ export const styles = StyleSheet.create({
   image: {
     width: 64,
     height: 64,
-    backgroundColor: theme.colors.secondary60,
+    backgroundColor: theme.colors.secondary40,
     borderColor: theme.colors.secondary50,
     borderWidth: 1,
     borderRadius: 8,
+    marginLeft: -1,
   },
   selectBody: {
     flex: 1,

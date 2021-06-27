@@ -31,7 +31,9 @@ export function Header({ title, action }: Props) {
         <Feather name="arrow-left" size={24} color={heading} />
       </BorderlessButton>
 
-      <Text style={styles.title}>{title}</Text>
+      <Text style={[styles.title, { marginRight: !!action ? 0 : 24 }]}>
+        {title}
+      </Text>
 
       {action && <View>{action}</View>}
     </LinearGradient>
