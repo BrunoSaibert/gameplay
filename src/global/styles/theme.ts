@@ -12,6 +12,8 @@ export const theme = {
     secondary40: "#1D2766",
     secondary30: "#495BCC",
 
+    discord: "#7289da",
+
     overlay: "rgba(0,0,0,0.7)",
     highlight: "#ABB1CC",
     heading: "#DDE3F0",

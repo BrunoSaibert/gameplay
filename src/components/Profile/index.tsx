@@ -1,26 +1,33 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Alert, Text, View } from "react-native";
 import { useAuth } from "../../hooks/auth";
+import { RectButton } from "react-native-gesture-handler";
 
 import { Avatar } from "../Avatar";
 
 import { styles } from "./styles";
 
 export function Profile() {
-  const { user } = useAuth();
+  const { user, welcomeMessage, signOut } = useAuth();
 
-  const statusList = [
-    "Hoje é dia de vitória",
-    "Bora jogar?",
-    "Bom te ver",
-    "Que bom que você chegou",
-  ];
-
-  const status = statusList[Math.floor(Math.random() * statusList.length)];
+  function handleSignOut() {
+    Alert.alert("Logout", "Deseja sair do GamePlay?", [
+      { text: "Não", style: "cancel" },
+      {
+        text: "Sim",
+        onPress: () => {
+          signOut();
+        },
+        style: "cancel",
+      },
+    ]);
+  }
 
   return (
     <View style={styles.container}>
-      <Avatar urlImage={user.avatar} />
+      <RectButton onPress={handleSignOut}>
+        <Avatar urlImage={user.avatar} />
+      </RectButton>
 
       <View style={{}}>
         <View style={styles.user}>
@@ -28,7 +35,7 @@ export function Profile() {
           <Text style={styles.username}>{user.firstName}</Text>
         </View>
 
-        <Text style={styles.message}>{status}</Text>
+        <Text style={styles.message}>{welcomeMessage}</Text>
       </View>
     </View>
   );

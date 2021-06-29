@@ -47,6 +47,11 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginTop: 30,
   },
+  fildErrors: {
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
   column: {
     flexDirection: "row",
     alignItems: "center",
