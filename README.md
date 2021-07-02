@@ -17,8 +17,8 @@
   </a>
 
 </p>
-<h1 align="center" style="width: 200px; margin: 0 auto;">
-    <img alt="gameplay" title="#gameplay" src="https://raw.githubusercontent.com/BrunoSaibert/gameplay/main/assets/icon.png" style="width: 200px; margin: 0 auto;" />
+<h1 align="center">
+    <img alt="gameplay" title="#gameplay" src="https://raw.githubusercontent.com/BrunoSaibert/gameplay/main/assets/icon.png" width="200px" />
 </h1>
 
 <h4 align="center">
